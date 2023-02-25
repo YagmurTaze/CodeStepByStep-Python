@@ -1,5 +1,3 @@
-#allah volkandan razı olsun
-
 def main():
     print("This program allows you to guess random numbers.")
     print("I will think of a number between 1 and 100")
