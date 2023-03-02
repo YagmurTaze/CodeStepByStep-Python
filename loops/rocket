@@ -1,0 +1,42 @@
+def space(num):
+    print(" " * num,end="")
+    
+def head_tail():
+    num = 5
+    for i in range (1, num + 1):
+        space(num + 1 - i)
+        print("/" * i + "**" + "\\" * i)
+             
+def line():
+    print("+" + "=*" * (6) + "+")
+        
+def body1():
+    num = 1
+    for i in range (1, 4):
+        print("|" + "." * (3 - i) + "/\\" * i + "." * (5 - num) + "/\\" * i + "." * (3 - i) + "|")
+        num += 2
+    num = 0
+    for j in range (3):
+        print("|" + "." * j + "\\/" * (3 - j) + "." * (num) + "\\/" * (3 - j) + "." * j + "|")
+        num += 2
+        
+def body2():
+    num = 0
+    for j in range (3):
+        print("|" + "." * j + "\\/" * (3 - j) + "." * (num) + "\\/" * (3 - j) + "." * j + "|")
+        num += 2
+    num = 1
+    for i in range (1, 4):
+        print("|" + "." * (3 - i) + "/\\" * i + "." * (5 - num) + "/\\" * i + "." * (3 -i) + "|")
+        num += 2
+        
+def main():
+    head_tail()
+    line()
+    body1()          
+    line()
+    body2()          
+    line()
+    head_tail()
+        
+main()
