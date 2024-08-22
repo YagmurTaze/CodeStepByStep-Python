@@ -1,8 +1,9 @@
 def biggest_and_smallest():
-    nums = int(input("How many numbers do you want to enter? "))
-    smallest = 999999
-    biggest = 0
-    for i in range (nums):
+    nums = int(input("How many numbers? "))
+    num = int(input("Next number? "))
+    smallest = num
+    biggest = num
+    for i in range (nums-1):
         num = int(input("Next number? "))
         if num < smallest:
             smallest = num
@@ -10,4 +11,6 @@ def biggest_and_smallest():
             biggest = num
        
     print("Biggest =",biggest)
-    print("Smallest  =",smallest)
+    print("Smallest =",smallest)
+    
+biggest_and_smallest()
